@@ -7,6 +7,7 @@ var concat = require('gulp-concat'),
     autoprefixer = new LessPluginAutoPrefixer({ browsers: ['last 2 versions']}),
     minifyCss = require('gulp-minify-css'),
     plumber = require('gulp-plumber'),
+    server = require('gulp-server-livereload'),
     uglify = require('gulp-uglify'),
     wiredep = require('wiredep');
 
@@ -42,7 +43,16 @@ gulp.task('style', function () {
         }))
         .pipe(minifyCss())
         .pipe(concat('styles.min.css'))
-        .pipe(gulp.dest('src/main/webapp/assets'));
+        .pipe(gulp.dest('src/assets'));
+});
+
+// Web server
+gulp.task('serve', function() {
+    gulp.src('src')
+        .pipe(server({
+            liveReload: false,
+            open: true
+        }));
 });
 
 // Watch for changes while developing
