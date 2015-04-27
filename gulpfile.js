@@ -7,11 +7,17 @@ var concat = require('gulp-concat'),
     autoprefixer = new LessPluginAutoPrefixer({ browsers: ['last 2 versions']}),
     minifyCss = require('gulp-minify-css'),
     plumber = require('gulp-plumber'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    wiredep = require('wiredep');
 
 // Clean generated assets
 gulp.task('clean', function() {
     del(['src/assets/*']);
+});
+
+// Wire dependencies
+gulp.task('wiredep', function() {
+    wiredep({ src: 'src/*.html', dest: 'src/*.html'});
 });
 
 // Handle JS build
@@ -41,8 +47,9 @@ gulp.task('style', function () {
 
 // Watch for changes while developing
 gulp.task('watch', function() {
+    gulp.watch('bower.json', ['wiredep']);
     gulp.watch('src/less/*.less', ['style']);
     gulp.watch('src/js/*.js', ['script']);
 });
 
-gulp.task('default', ['clean', 'script', 'style']);
+gulp.task('default', ['clean', 'script', 'style', 'wiredep']);

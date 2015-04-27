@@ -18,5 +18,8 @@
     "gulp-plumber": "^1.0.0",
     "gulp-uglify": "^1.2.0",
     "less-plugin-autoprefix": "^1.4.1"
+  },
+  "dependencies": {
+    "wiredep": "^2.2.2"
   }
 }
