@@ -1,7 +1,7 @@
 jQuery(function($) {
     var opts = {
         $menu: $('.site-nav'),
-        directionThreshold: 100,
+        directionThreshold: 200,
         easing: 'swing',
         keyboardNavigation: {
             enabled: true,
