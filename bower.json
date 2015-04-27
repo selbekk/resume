@@ -1,0 +1,14 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "authors": [
+    "selbekk <kristofer.selbekk@bekk.no>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "panelsnap": "~0.14.0",
+    "bootstrap": "~3.3.4"
+  }
+}
