@@ -9,6 +9,14 @@
   "author": "Kristofer Selbekk <selbeezy@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-jshint": "^1.10.0",
+    "gulp-less": "^3.0.3",
+    "gulp-minify-css": "^1.1.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-uglify": "^1.2.0",
+    "less-plugin-autoprefix": "^1.4.1"
   }
 }
