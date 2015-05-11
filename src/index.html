@@ -17,15 +17,15 @@
                     <li class="site-nav-item"><a href="#splash" class="site-nav-link" data-panel="splash"><span class="glyphicon glyphicon-home"></span></a></li>
                     <li class="site-nav-item"><a href="#intro" class="site-nav-link" data-panel="introduction">Introduction</a></li>
                     <li class="site-nav-item"><a href="#personal" class="site-nav-link" data-panel="personal">Personal</a></li>
-                    <li class="site-nav-item"><a href="#" class="site-nav-link">Skills</a></li>
-                    <li class="site-nav-item"><a href="#" class="site-nav-link">Experience</a></li>
+                    <li class="site-nav-item"><a href="#skills" class="site-nav-link" data-panel="skills">Skills</a></li>
+                    <li class="site-nav-item"><a href="#experience" class="site-nav-link">Experience</a></li>
                     <li class="site-nav-item"><a href="#" class="site-nav-link">School</a></li>
                     <li class="site-nav-item"><a href="#" class="site-nav-link">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <div class="site-content">
-            <section class="fullsize-panel mod-splash" data-panel="splash">
+            <section class="resume-panel mod-splash" id="splash" data-panel="splash">
                 <div class="panel-wrap">
                     <hgroup class="splash-headings">
                         <h1 class="splash-heading-name">Kristofer Selbekk</h1>
@@ -37,7 +37,7 @@
                     </p>
                 </div>
             </section>
-            <section class="fullsize-panel mod-introduction" data-panel="introduction">
+            <section class="resume-panel mod-introduction" id="introduction" data-panel="introduction">
                 <div class="panel-wrap">
                     <div class="row">
                         <div class="col-sm-4">
@@ -60,11 +60,11 @@
                     </div>
                 </div>
             </section>
-            <section class="fullsize-panel mod-personal" data-panel="personal">
+            <section class="resume-panel mod-personal" id="personal" data-panel="personal">
                 <div class="panel-wrap">
                     <div class="row">
                         <div class="col-sm-4 col-sm-push-8 hidden-xs">
-                            <img src="/img/kristofer-another-selfie.jpg" alt="Another picture of Kristofer" class="img-circle introduction-image"/>
+                            <img src="/img/kristofer-in-front-of-a-door.jpg" alt="Another picture of Kristofer" class="img-circle introduction-image"/>
                         </div>
                         <div class="col-sm-8 col-sm-pull-4">
                             <h2 class="personal-facts-header">Here's a few facts about me</h2>
@@ -76,10 +76,87 @@
                                 I'm a <strong>passionate and reliable team player</strong> that loves to ship <strong>
                                 high-quality</strong> code into production.
                             </p>
+                            <p class="lead">
+                                I'm also a lot of other stuff, that I can't come up with right now. But I'll get back
+                                to you.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
+            <section class="resume-panel mod-skills" id="skills" data-panel="skills">
+                <div class="panel-wrap">
+                    <h2 class="skills-panel-header">I <span class="glyphicon glyphicon-heart"></span> to code</h2>
+                    <p class="lead">
+                        I've worked with tons of great technology stacks over the years. Here's a few personal favorites:
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="technology-list mod-backend">
+                                <li class="technology-list-item">Java 8</li>
+                                <li class="technology-list-item">Node.js</li>
+                                <li class="technology-list-item">RESTful interfaces</li>
+                                <li class="technology-list-item">Microservices</li>
+                                <li class="technology-list-item">Puppet</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="technology-list mod-frontend">
+                                <li class="technology-list-item">HTML5</li>
+                                <li class="technology-list-item">CSS</li>
+                                <li class="technology-list-item">JavaScript</li>
+                                <li class="technology-list-item">Single page apps</li>
+                                <li class="technology-list-item">Responsiveness</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="lead">
+                        In addition to being a regular full-stack developer, I've had
+                        <strong>dev-ops responsibilities</strong> at some of my projects, which has given me a unique
+                        insight into the operations part of our digital world.
+                    </p>
+                </div>
+            </section>
+            <section class="resume-panel mod-experience" id="experience" data-panel="experience">
+                <div class="panel-wrap">
+                    <h2>3 years of professional experience</h2>
+                    <p class="lead">
+                        I've worked for <a href="http://www.get.no">Get AS</a> and <a href="http://www.bekk.no/en/">Bekk
+                        Consulting AS</a> as an IT professional, both leading in their fields. In addition to those,
+                        I've been taking on small and medium sized projects since I was in my early teens. Here's a
+                        few choice words from my previous employers.
+                    </p>
+                    <div class="row">
+                        <article class="col-sm-4 experience-quote">
+                            <blockquote cite="Marius Haugen, Head of Development, Get">
+                                <p>
+                                    I have come to see Kristofer as a fast paced developer with a clear passion for
+                                    usability, quality and feature rich applications. Not to mention he is also a nice guy
+                                    to work with.
+                                </p>
+                                <strong>Marius Haugen, Head of Development, Get</strong>
+                            </blockquote>
+                        </article>
+                        <article class="col-sm-4 experience-quote">
+                            <blockquote cite="Some dude">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, asperiores dignissimos ducimus eaque eligendi, eum magnam molestias natus neque nobis non porro ratione reprehenderit rerum tempora unde vel velit veniam!
+                                </p>
+                                <strong>Some dude, yada inc.</strong>
+                            </blockquote>
+                        </article>
+                        <article class="col-sm-4 experience-quote">
+                            <blockquote cite="Some dude">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, asperiores dignissimos ducimus eaque eligendi, eum magnam molestias natus neque nobis non porro ratione reprehenderit rerum tempora unde vel velit veniam!
+                                </p>
+                                <strong>Some dude, yada inc.</strong>
+                            </blockquote>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
         </div>
         <footer class="site-footer"></footer>
 
